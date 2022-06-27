@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Update">
+
+    <EditText
+        android:id="@+id/empFname"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/empAge"
+        app:layout_constraintEnd_toStartOf="@+id/empLname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/empLname"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="83dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/empAge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/empFname"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/empAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="59dp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/empPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/empLname" />
+
+    <EditText
+        android:id="@+id/empPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="59dp"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/empSalary"
+        app:layout_constraintStart_toStartOf="@+id/empAge"
+        app:layout_constraintTop_toBottomOf="@+id/empAge" />
+
+    <EditText
+        android:id="@+id/empSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="59dp"
+        android:ems="10"
+        android:hint="Salary"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/empPos"
+        app:layout_constraintStart_toStartOf="@+id/empPhone"
+        app:layout_constraintTop_toBottomOf="@+id/empPhone" />
+
+    <EditText
+        android:id="@+id/empPos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="59dp"
+        android:ems="10"
+        android:hint="Position"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/updateBtn"
+        app:layout_constraintStart_toStartOf="@+id/empSalary"
+        app:layout_constraintTop_toBottomOf="@+id/empSalary" />
+
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="59dp"
+        android:text="Update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/empPos" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
